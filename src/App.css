@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  margin:'0';
 }
 
 .App-logo {
@@ -26,6 +27,21 @@
 
 .App-link {
   color: #61dafb;
+}
+
+/* Default styles for the footer */
+footer {
+  position: absolute; /* Change to 'absolute' to keep the footer at the bottom of the content */
+  bottom: 0;
+  width: 100%;
+}
+
+/* Styles for larger screens (desktops) */
+@media (min-width: 768px) {
+  footer {
+    position: static; /* Change to 'static' to let the footer follow the flow of the content on larger screens */
+    margin-top: 20px; /* Add some spacing between the content and the footer on larger screens */
+  }
 }
 
 @keyframes App-logo-spin {
